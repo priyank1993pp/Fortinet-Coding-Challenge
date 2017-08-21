@@ -13,7 +13,15 @@ public class Reverse_Linkedlist_Test {
 		reverseTest.head.next = new Node(2);
 		reverseTest.head.next.next = new Node(3);
 		Node result = reverseTest.reverseList(reverseTest.head);
-		assertEquals(3 , result.data);
+		int[] arr = new int[3];
+		int i = 0;
+		while (result != null) {
+			arr[i] = result.data;
+			result = result.next;
+			i++;
+		}
+		int[] check = { 3, 2, 1 };
+		assertArrayEquals(check,arr);
 	}
 
 }
