@@ -7,7 +7,7 @@
 
 ## Coding Challenge 2
 ### Factory Pattern :-  
- > Factory Pattern is a Creational Design Pattern. It is used to hide the logic of an Object creational. It is used when we have multiple Subclass and we have to return one specific class as per client requirement.
+ > Factory Pattern is a Creational Design Pattern. It is used to hide the logic of an Object creation. It is used when we have multiple Subclass and we have to return one specific class as per client requirement.
    I explain you with the example how to return one prticular subclass. (For Example: I take one pizza interface and in which there are methods like prpere(), bake(), cut(), box(). I create three pizza subclass like ChessPizza.java, 
    VegiePizza.java, PepperoniPizza.java. They all implements pizza interface. Now I developed a PizzaShop.java class which is a Factory Pattern class for whole pizza shop application. In this class I implement a logic to return one pizza as per customer choise like Chess or Vegie or Pepperoni.
    OrderPizza.java is main class. This class getting a choice from user and prepare pizza for customer.) 
@@ -31,5 +31,6 @@
   >6. session.saveorUpdate(object) :- This method is used to update any object of the database.
   
   #### 2. How would you control transaction with Spring & Hibernate? Answer with different scenarios.
+  Transaction management is required to make data consistant and durable in the database. Spring provides transaction manager to handle transaction. For JDBC spring provides Data Source Transaction Manager, for Hibernate spring provides Hibernste Transaction Manager, for JPA it provides JPA transaction Manager and for JTA ir provides JTA Transaction Manager. Basically Transaction means, (for example:- if A wants to transfer $100 to B's account. You think that that's a one transaction but its not what happens, first $100 deduct from A's account that is one transaction and other is to credit $100 in B's account. So  basically if both transaction comits successful than we can say successful transaction but if any one transaction fails than in database rollbacks the successful transaction.)
   
     
