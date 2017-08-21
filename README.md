@@ -3,7 +3,7 @@
 ## Coding Challenge 1
  > 1. Create Node class for creating a node in Linked List.
  > 2. Create Likedlist.java class for Linked List and develope reverseList(Node head) method for reversing Linked List.
- > 3. In reverseList(Node head) method I took three pointer for current, previous and next node and then use iterative method for reversing Linked List.
+ > 3. In reverseList(Node head) method I implement this method recursively in this method first i take one pointer for next element which will be the previous element of the current element than i make a recursive call for new head of that sub linked list.
 
 ## Coding Challenge 2
 ### Factory Pattern :-  
